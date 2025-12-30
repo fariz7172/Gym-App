@@ -952,6 +952,15 @@
                     </a>
                 </div>
                 @endif
+                <div class="nav-section" style="margin-top: auto; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="nav-link" style="width: 100%; border: none; background: none; cursor: pointer; color: var(--danger);">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Keluar</span>
+                        </button>
+                    </form>
+                </div>
             </nav>
         </aside>
         

@@ -21,7 +21,7 @@ use App\Http\Controllers\ReportController;
 
 // Auth Routes
 Route::get('/', function () {
-    return redirect()->route('login');
+    return view('welcome');
 });
 
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
